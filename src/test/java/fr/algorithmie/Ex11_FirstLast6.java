@@ -6,6 +6,7 @@ import org.junit.runner.RunWith;
 import outils.Exercice;
 import outils.ExerciceRunner;
 import outils.Question;
+import outils.Resultat;
 
 /**
  * Ne modifiez ni les noms des classes, ni les noms des méthodes.
@@ -39,6 +40,21 @@ public class Ex11_FirstLast6 {
 
 		// TODO LOGUEZ la valeur obtenue pour chacun des 6 tableaux tab1 à tab6
 
+		boolean ctrlTab = false;
+		
+		for (int i=1;i<=6;i++)	{
+			if ((tab1 != null) && (tab1[0]==6 || tab1[tab1.length-1]==6))	{
+				ctrlTab = true;
+			}
+			else {
+				ctrlTab = false;
+			}
+				Resultat.log(ctrlTab);
+		}
+		
+		
+		
+		
 	}
 
 }
